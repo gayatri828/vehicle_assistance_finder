@@ -44,7 +44,6 @@ class TextInput extends StatefulWidget {
 
 class TextInputState extends State<TextInput> {
   late TextEditingController _controller;
-  bool _obscureText = true; // To toggle password visibility
 
   @override
   void initState() {
@@ -64,12 +63,10 @@ class TextInputState extends State<TextInput> {
   Widget build(BuildContext context) {
     return Stack(
       children: [
-        Container(
+        SizedBox(
           height: widget.height,
-          margin: const EdgeInsets.symmetric(horizontal: 30.0),
           child: TextField(
             controller: _controller,
-            obscureText: _obscureText,
             decoration: InputDecoration(
               labelText: widget.label ?? 'Full Name',
               border: OutlineInputBorder(

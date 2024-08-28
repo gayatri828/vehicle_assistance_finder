@@ -8,13 +8,13 @@ class EyeIcon extends StatelessWidget {
   Widget build(BuildContext context) {
     const String assetName = 'lib/src/assets/icons/eyeIcon.svg';
     return Padding(
-      padding: const EdgeInsets.symmetric(horizontal: 20),
+      padding: const EdgeInsets.symmetric(horizontal: 0),
       child: InkWell(
         onTap: () {},
         child: SvgPicture.asset(
           assetName,
-          width: 25,
-          height: 25,
+          width: 18,
+          height: 18,
         ),
       ),
     );

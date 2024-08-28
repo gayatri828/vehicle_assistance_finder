@@ -70,6 +70,10 @@ flutter:
     - lib/src/assets/icons/logoutIcon.svg
     - lib/src/assets/icons/alertIcon.svg
     - lib/src/assets/icons/closeIcon.svg
+    - lib/src/assets/images/onlinesecurity.png
+    - lib/src/assets/images/car.png
+    - lib/src/assets/images/bike.png
+    - lib/src/assets/images/home.png
 
   # To add assets to your application, add an assets section, like this:
   # assets:

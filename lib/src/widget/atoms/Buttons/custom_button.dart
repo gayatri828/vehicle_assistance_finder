@@ -17,25 +17,26 @@ class CustomButton extends StatelessWidget {
   final TextAlign? textAlign;
   final double? borderWidth;
   final Widget? icon;
+  final Alignment? alignment;
 
-  const CustomButton({
-    super.key,
-    required this.label,
-    this.color,
-    this.height,
-    this.backgroundColor,
-    this.width,
-    this.onTap,
-    this.borderColor,
-    this.textColor,
-    this.fontsize,
-    this.borderRadius,
-    this.fontFamily,
-    this.fontweight,
-    this.textAlign,
-    this.borderWidth,
-    this.icon,
-  });
+  const CustomButton(
+      {super.key,
+      required this.label,
+      this.color,
+      this.height,
+      this.backgroundColor,
+      this.width,
+      this.onTap,
+      this.borderColor,
+      this.textColor,
+      this.fontsize,
+      this.borderRadius,
+      this.fontFamily,
+      this.fontweight,
+      this.textAlign,
+      this.borderWidth,
+      this.icon,
+      this.alignment});
 
   @override
   Widget build(BuildContext context) {
@@ -57,7 +58,7 @@ class CustomButton extends StatelessWidget {
           borderRadius: borderRadius ?? BorderRadius.circular(8),
           border: Border.all(color: borderColor, width: borderWidth),
         ),
-        alignment: Alignment.center,
+        alignment: alignment ?? Alignment.center,
         child: Row(
           mainAxisAlignment: MainAxisAlignment.center,
           mainAxisSize: MainAxisSize.min,

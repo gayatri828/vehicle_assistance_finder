@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:vehicle_assistance_finder/atoms/Buttons/custom_button.dart';
+import 'package:vehicle_assistance_finder/src/widget/atoms/Buttons/custom_button.dart';
 
 class LoginButton extends StatefulWidget {
   final VoidCallback? onPress;
@@ -12,20 +12,23 @@ class LoginButton extends StatefulWidget {
   final String? fontFamily;
   final Color? textColor;
   final double? borderWidth;
+  final BorderRadius? borderRadius;
+  final Alignment? alignment;
 
-  const LoginButton({
-    super.key,
-    this.fontFamily,
-    this.onPress,
-    this.label,
-    this.width,
-    this.height,
-    this.fontSize,
-    this.borderColor,
-    this.borderWidth,
-    this.fontWeight,
-    this.textColor,
-  });
+  const LoginButton(
+      {super.key,
+      this.fontFamily,
+      this.onPress,
+      this.label,
+      this.width,
+      this.height,
+      this.fontSize,
+      this.borderColor,
+      this.borderWidth,
+      this.fontWeight,
+      this.textColor,
+      this.borderRadius,
+      this.alignment});
 
   @override
   // ignore: library_private_types_in_public_api
@@ -49,17 +52,17 @@ class _LoginButtonState extends State<LoginButton> {
       child: CustomButton(
         label: widget.label ?? "Login",
         fontFamily: widget.fontFamily ?? 'Inter',
-        // color: Colors.transparent,
-        // borderColor: widget.borderColor ?? const Color(0x80000000),
         color: const Color(0xFF2F2BFF),
+        alignment: widget.alignment,
         textColor: widget.textColor ?? Colors.white,
-        height: widget.height ?? 64,
-        width: widget.width ?? 339,
+        height: widget.height ?? 56,
+        width: widget.width ?? double.infinity, // Set to full width
         onTap: widget.onPress,
         fontsize: widget.fontSize ?? 18,
         fontweight: widget.fontWeight ?? FontWeight.w700,
         borderWidth: widget.borderWidth ?? 1,
         textAlign: TextAlign.center,
+        borderRadius: widget.borderRadius,
       ),
     );
   }

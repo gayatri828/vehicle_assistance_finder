@@ -17,7 +17,13 @@ import 'package:vehicle_assistance_finder/src/widget/atoms/ServiceIcon/service_i
 import 'package:vehicle_assistance_finder/src/widget/atoms/StarIcon/star_icon.dart';
 
 import 'package:vehicle_assistance_finder/src/widget/atoms/TextInput/text_input.dart';
+import 'package:vehicle_assistance_finder/src/widget/molecules/ChooseBike/select_motorcycle.dart';
+import 'package:vehicle_assistance_finder/src/widget/molecules/ChooseCar/car.dart';
 import 'package:vehicle_assistance_finder/src/widget/molecules/PasswordField/password_field.dart';
+import 'package:vehicle_assistance_finder/src/widget/organisms/HomePage/home_page.dart';
+import 'package:vehicle_assistance_finder/src/widget/organisms/Login/login.dart';
+import 'package:vehicle_assistance_finder/src/widget/organisms/Register/register.dart';
+import 'package:vehicle_assistance_finder/src/widget/organisms/SelectVehicle/select_vehicle.dart';
 
 void main() {
   runApp(const MyApp());
@@ -30,6 +36,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return const MaterialApp(
       title: 'Custom Button Example',
+      debugShowCheckedModeBanner: false, // Remove the debug banner
       home: MyHomePage(),
     );
   }
@@ -47,27 +54,34 @@ class _MyHomePageState extends State<MyHomePage> {
   Widget build(BuildContext context) {
     return const Scaffold(
       body: Center(
-          // child: RegisterButton(),
-          // child: LoginButton(),
-          // child: TextInput(),
-          // child: EyeIcon(),
-          // child: CircleIcon(),
-          // child: CarIcon(),
-          // child: ProfileIcon(),
-          // child: HomeIcon(),
-          // child: ServiceIcon(),
-          // child: StarIcon(),
-          // child: LocationIcon(),
-          // child: BackIcon(),
-          // child: SearchIcon(),
-          // child: MenuIcon(),
-          // child: NotificationIcon(),
-          // child: NextIcon(),
-          // child: LogoutIcon(),
-          // child: AlertIcon(),
-          // child: CloseIcon(),
-          // child: PasswordField(),
-          ),
+        // Uncomment the desired widget to display
+        // child: RegisterButton(),
+        // child: LoginButton(),
+        // child: TextInput(),
+        // child: EyeIcon(),
+        // child: CircleIcon(),
+        // child: CarIcon(),
+        // child: ProfileIcon(),
+        // child: HomeIcon(),
+        // child: ServiceIcon(),
+        // child: StarIcon(),
+        // child: LocationIcon(),
+        // child: BackIcon(),
+        // child: SearchIcon(),
+        // child: MenuIcon(),
+        // child: NotificationIcon(),
+        // child: NextIcon(),
+        // child: LogoutIcon(),
+        // child: AlertIcon(),
+        // child: CloseIcon(),
+        // child: PasswordField(),
+        // child: Login(),
+        // child: Register(),
+        // child: CarSelect(),
+        // child: SelectMotorcycle()
+        // child: SelectVehicle(),
+        child: HomePage(),
+      ),
     );
   }
 }

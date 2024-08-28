@@ -67,7 +67,6 @@ class PasswordFieldState extends State<PasswordField> {
       children: [
         Container(
           height: widget.height,
-          margin: const EdgeInsets.symmetric(horizontal: 30.0),
           child: TextField(
             controller: _controller,
             obscureText: _obscureText,
@@ -76,8 +75,8 @@ class PasswordFieldState extends State<PasswordField> {
               border: OutlineInputBorder(
                 borderRadius: BorderRadius.circular(widget.borderRadius),
               ),
-              contentPadding: const EdgeInsets.fromLTRB(
-                  16.0, 0, 50.0, 0), // Aligns text with the top border
+              contentPadding: const EdgeInsets.fromLTRB(16.0, 12.0, 50.0,
+                  12.0), // Right padding added to avoid text overlap with the icon
             ),
             style: TextStyle(
               fontSize: widget.fontSize ?? 14.0,
@@ -89,15 +88,18 @@ class PasswordFieldState extends State<PasswordField> {
           ),
         ),
         Positioned(
-          right: 45.0, // Adjust the position of the EyeIcon
-          top: 12.0, // Aligns the EyeIcon with the top border
+          right: 15.0, // Adjust the position of the EyeIcon
+          top: 15.0, // Centering the icon vertically in the input field
           child: GestureDetector(
             onTap: () {
               setState(() {
                 _obscureText = !_obscureText; // Toggle password visibility
               });
             },
-            child: EyeIcon(), // Eye icon to toggle password visibility
+            child: Container(
+                alignment: Alignment.center,
+                child:
+                    const EyeIcon()), // Eye icon to toggle password visibility
           ),
         ),
       ],

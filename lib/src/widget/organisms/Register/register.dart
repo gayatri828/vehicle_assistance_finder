@@ -5,14 +5,14 @@ import 'package:vehicle_assistance_finder/src/widget/atoms/LoginButton/login_but
 import 'package:vehicle_assistance_finder/src/widget/atoms/TextInput/text_input.dart';
 import 'package:vehicle_assistance_finder/src/widget/molecules/PasswordField/password_field.dart';
 
-class Login extends StatefulWidget {
-  const Login({super.key});
+class Register extends StatefulWidget {
+  const Register({super.key});
 
   @override
-  LoginState createState() => LoginState();
+  RegisterState createState() => RegisterState();
 }
 
-class LoginState extends State<Login> {
+class RegisterState extends State<Register> {
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -31,7 +31,7 @@ class LoginState extends State<Login> {
             top: 230, // Adjust the vertical position of the text
             left: 140, // Adjust the horizontal position of the text
             child: Text(
-              "Login",
+              "Register",
               style: TextStyle(
                 fontSize: 36,
                 fontWeight: FontWeight.w700,
