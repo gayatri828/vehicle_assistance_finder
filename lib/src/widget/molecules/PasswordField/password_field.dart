@@ -73,10 +73,9 @@ class PasswordFieldState extends State<PasswordField> {
             decoration: InputDecoration(
               labelText: widget.label ?? 'Password',
               border: OutlineInputBorder(
-                borderRadius: BorderRadius.circular(widget.borderRadius),
+                borderRadius: BorderRadius.circular(14),
               ),
-              contentPadding: const EdgeInsets.fromLTRB(16.0, 12.0, 50.0,
-                  12.0), // Right padding added to avoid text overlap with the icon
+              contentPadding: const EdgeInsets.fromLTRB(16.0, 12.0, 50.0, 12.0),
             ),
             style: TextStyle(
               fontSize: widget.fontSize ?? 14.0,

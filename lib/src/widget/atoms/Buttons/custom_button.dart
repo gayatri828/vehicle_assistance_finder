@@ -1,4 +1,3 @@
-// atoms/Buttons/custom_button.dart
 import 'package:flutter/material.dart';
 
 class CustomButton extends StatelessWidget {
@@ -17,6 +16,7 @@ class CustomButton extends StatelessWidget {
   final TextAlign? textAlign;
   final double? borderWidth;
   final Widget? icon;
+  final Image? image; // Added image parameter
   final Alignment? alignment;
 
   const CustomButton(
@@ -36,6 +36,7 @@ class CustomButton extends StatelessWidget {
       this.textAlign,
       this.borderWidth,
       this.icon,
+      this.image, // Image parameter
       this.alignment});
 
   @override
@@ -63,6 +64,10 @@ class CustomButton extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           mainAxisSize: MainAxisSize.min,
           children: [
+            if (image != null) ...[
+              image!,
+              const SizedBox(width: 8),
+            ],
             if (icon != null) ...[
               icon!,
               const SizedBox(width: 8),

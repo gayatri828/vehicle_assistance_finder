@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:vehicle_assistance_finder/src/widget/atoms/Buttons/custom_button.dart';
 
-class LoginButton extends StatefulWidget {
+class GoogleButton extends StatefulWidget {
   final VoidCallback? onPress;
   final String? label;
   final double? height;
@@ -15,7 +15,7 @@ class LoginButton extends StatefulWidget {
   final BorderRadius? borderRadius;
   final Alignment? alignment;
 
-  const LoginButton(
+  const GoogleButton(
       {super.key,
       this.fontFamily,
       this.onPress,
@@ -31,11 +31,10 @@ class LoginButton extends StatefulWidget {
       this.alignment});
 
   @override
-  // ignore: library_private_types_in_public_api
-  _LoginButtonState createState() => _LoginButtonState();
+  _GoogleButtonState createState() => _GoogleButtonState();
 }
 
-class _LoginButtonState extends State<LoginButton> {
+class _GoogleButtonState extends State<GoogleButton> {
   final ValueNotifier<bool> _isHovered = ValueNotifier(false);
 
   @override
@@ -50,7 +49,12 @@ class _LoginButtonState extends State<LoginButton> {
       onEnter: (_) => _isHovered.value = true,
       onExit: (_) => _isHovered.value = false,
       child: CustomButton(
-        label: widget.label ?? "Login",
+        image: Image.asset(
+          'lib/src/assets/images/googlelogo.png', // Path to your image asset
+          // color: Colors.white,
+          width: 24, // Adjust size as needed
+        ),
+        label: widget.label ?? "Continue with Google",
         fontFamily: widget.fontFamily ?? 'Inter',
         color: const Color(0xFF2F2BFF),
         alignment: widget.alignment,
@@ -62,7 +66,7 @@ class _LoginButtonState extends State<LoginButton> {
         fontweight: widget.fontWeight ?? FontWeight.w700,
         borderWidth: widget.borderWidth ?? 1,
         textAlign: TextAlign.center,
-        borderRadius: BorderRadius.circular(16),
+        borderRadius: widget.borderRadius ?? BorderRadius.circular(16),
       ),
     );
   }

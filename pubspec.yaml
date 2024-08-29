@@ -64,9 +64,9 @@ flutter:
     - lib/src/assets/icons/locationIcon.svg
     - lib/src/assets/icons/backIcon.svg
     - lib/src/assets/icons/searchIcon.svg
+    - lib/src/assets/icons/nextIcon.svg
     - lib/src/assets/icons/menuIcon.svg
     - lib/src/assets/icons/notificationIcon.svg
-    - lib/src/assets/icons/nextIcon.svg
     - lib/src/assets/icons/logoutIcon.svg
     - lib/src/assets/icons/alertIcon.svg
     - lib/src/assets/icons/closeIcon.svg
@@ -74,6 +74,10 @@ flutter:
     - lib/src/assets/images/car.png
     - lib/src/assets/images/bike.png
     - lib/src/assets/images/home.png
+    - lib/src/assets/images/googlelogo.png
+    - lib/src/assets/images/vehicles.png
+    - lib/src/assets/images/service.png
+    - lib/src/assets/images/rsaService.png
 
   # To add assets to your application, add an assets section, like this:
   # assets:

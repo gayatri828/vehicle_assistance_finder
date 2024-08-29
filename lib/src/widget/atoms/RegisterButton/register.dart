@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:vehicle_assistance_finder/atoms/Buttons/custom_button.dart';
+import 'package:vehicle_assistance_finder/src/widget/atoms/Buttons/custom_button.dart';
 
 class RegisterButton extends StatefulWidget {
   final VoidCallback? onPress;
@@ -53,13 +53,14 @@ class _RegisterButtonState extends State<RegisterButton> {
         // borderColor: widget.borderColor ?? const Color(0x80000000),
         color: const Color(0xFF2F2BFF),
         textColor: widget.textColor ?? Colors.white,
-        height: widget.height ?? 64,
-        width: widget.width ?? 339,
+        height: widget.height ?? 50,
+        width: widget.width ?? double.infinity,
         onTap: widget.onPress,
         fontsize: widget.fontSize ?? 18,
         fontweight: widget.fontWeight ?? FontWeight.w700,
         borderWidth: widget.borderWidth ?? 1,
         textAlign: TextAlign.center,
+        borderRadius: BorderRadius.all(Radius.circular(16)),
       ),
     );
   }

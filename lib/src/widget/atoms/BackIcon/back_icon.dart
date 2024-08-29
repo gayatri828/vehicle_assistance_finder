@@ -8,13 +8,13 @@ class BackIcon extends StatelessWidget {
   Widget build(BuildContext context) {
     const String assetName = 'lib/src/assets/icons/backIcon.svg';
     return Padding(
-      padding: const EdgeInsets.symmetric(horizontal: 20),
+      padding: const EdgeInsets.only(left: 10),
       child: InkWell(
         onTap: () {},
         child: SvgPicture.asset(
           assetName,
-          width: 25,
-          height: 25,
+          width: 15,
+          height: 15,
         ),
       ),
     );

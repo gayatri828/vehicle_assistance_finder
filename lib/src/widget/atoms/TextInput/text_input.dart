@@ -70,7 +70,7 @@ class TextInputState extends State<TextInput> {
             decoration: InputDecoration(
               labelText: widget.label ?? 'Full Name',
               border: OutlineInputBorder(
-                borderRadius: BorderRadius.circular(widget.borderRadius),
+                borderRadius: BorderRadius.circular(14),
               ),
               contentPadding: const EdgeInsets.fromLTRB(
                   16.0, 0, 50.0, 0), // Aligns text with the top border
