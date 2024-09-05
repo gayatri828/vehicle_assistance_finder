@@ -8,7 +8,7 @@ class NotificationIcon extends StatelessWidget {
   Widget build(BuildContext context) {
     const String assetName = 'lib/src/assets/icons/notificationIcon.svg';
     return Padding(
-      padding: const EdgeInsets.symmetric(horizontal: 20),
+      padding: const EdgeInsets.symmetric(horizontal: 5),
       child: InkWell(
         onTap: () {},
         child: SvgPicture.asset(

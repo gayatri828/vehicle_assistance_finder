@@ -65,7 +65,7 @@ class PasswordFieldState extends State<PasswordField> {
   Widget build(BuildContext context) {
     return Stack(
       children: [
-        Container(
+        SizedBox(
           height: widget.height,
           child: TextField(
             controller: _controller,

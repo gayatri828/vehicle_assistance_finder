@@ -14,27 +14,31 @@ class FooterMenuBar extends StatefulWidget {
 class FooterMenuBarState extends State<FooterMenuBar> {
   @override
   Widget build(BuildContext context) {
-    return const SizedBox(
-      width: double
-          .infinity, // Ensures the Row takes up the full width of the screen
-      child: Center(
-        child: Row(
-          mainAxisSize:
-              MainAxisSize.min, // Shrinks the Row to the size of its children
-          mainAxisAlignment:
-              MainAxisAlignment.center, // Centers items in the Row
-          crossAxisAlignment:
-              CrossAxisAlignment.center, // Vertically centers the icons
-          children: [
-            HomeIcon(),
-            SizedBox(width: 20), // Spacing between icons
-            CarIcon(),
-            SizedBox(width: 20),
-            ServiceIcon(),
-            SizedBox(width: 20),
-            ProfileIcon(),
-          ],
+    return Container(
+      width: double.infinity,
+      height: 55,
+      decoration: BoxDecoration(
+        color: Colors.white, // Optional: Set background color
+        border: Border(
+          top: BorderSide(color: Colors.black.withOpacity(0.2)),
         ),
+        boxShadow: [
+          BoxShadow(
+            color: Colors.grey.withOpacity(0.5), // Shadow color
+            blurRadius: 4.0, // Spread radius
+            offset: Offset(0, 2), // Offset of the shadow
+          ),
+        ],
+      ),
+      child: Row(
+        mainAxisAlignment: MainAxisAlignment
+            .spaceBetween, // Distributes space evenly between items
+        children: const [
+          HomeIcon(),
+          CarIcon(),
+          ServiceIcon(),
+          ProfileIcon(),
+        ],
       ),
     );
   }

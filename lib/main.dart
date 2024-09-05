@@ -1,8 +1,12 @@
 import 'package:flutter/material.dart';
+import 'package:vehicle_assistance_finder/src/widget/molecules/SearchBar/search_bar.dart';
+import 'package:vehicle_assistance_finder/src/widget/molecules/WorkshopDetails/workshop_details.dart';
+import 'package:vehicle_assistance_finder/src/widget/organisms/HomePage/home_page.dart';
 // import 'package:vehicle_assistance_finder/src/widget/organisms/HomePage/home_page.dart';
 // import 'package:vehicle_assistance_finder/src/widget/organisms/Login/login.dart';
 // import 'package:vehicle_assistance_finder/src/widget/organisms/Register/register.dart';
-import 'package:vehicle_assistance_finder/src/widget/organisms/SelectVehicle/select_vehicle.dart';
+// import 'package:vehicle_assistance_finder/src/widget/organisms/SelectVehicle/select_vehicle.dart';
+import 'package:vehicle_assistance_finder/src/widget/organisms/ServicesPage/services_page.dart';
 
 void main() {
   runApp(const MyApp());
@@ -59,12 +63,14 @@ class _MyHomePageState extends State<MyHomePage> {
         // child: Register(),
         // child: CarSelect(),
         // child: SelectMotorcycle()
-        child: SelectVehicle(),
+        // child: SelectVehicle(),
         // child: HomePage(),
-        // child: ServicesPage(),
+        child: ServicesPage(),
+        // child: SearchInputBox(),
         // child: VehicleServices(),
         // child: RSAServices(),
         // child: FooterMenuBar()
+        // child: WorkshopDetails(),
       ),
     );
   }

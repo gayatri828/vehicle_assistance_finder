@@ -1,0 +1,61 @@
+{
+  "data": [
+    {
+      "id": 1,
+      "data": "Flat tire",
+      "hintText": "AAA Co. ltd"
+    },
+    {
+      "id": 2,
+      "data": "Project name",
+      "hintText": "Franchise Recruitment - March 2023"
+    },
+    {
+      "id": 3,
+      "data": "Device target",
+      "hintText": "PC"
+    },
+    {
+      "id": 4,
+      "data": "Production Intention",
+      "hintText": "Attracting customers for FC store owner candidates"
+    },
+    {
+      "id": 5,
+      "data": "Persona",
+      "text": [
+        "Target : ",
+        "People considering becoming a FC owner",
+        "Income/Age :",
+        "There are no detailed settings."
+      ]
+    },
+    {
+      "id": 6,
+      "data": "Production Background",
+      "text": [
+        "We want to increase the number of FC store owners.",
+        "There is no major point of differentiation (USP) among competitor",
+        "I want to make an LP that maximizes its merits"
+      ]
+    },
+    {
+      "id": 7,
+      "data": "KPI",
+      "hintText": "Information request"
+    },
+    {
+      "id": 8,
+      "data": "Competitive image",
+      "widget": "CompetitiveComaprisionImage "
+    },
+    {
+      "id": 9,
+      "data": "Competitive comparision"
+    },
+    {
+      "id": 10,
+      "data": "Tommana"
+    }
+  ]
+}

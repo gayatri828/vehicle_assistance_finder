@@ -31,6 +31,7 @@ class GoogleButton extends StatefulWidget {
       this.alignment});
 
   @override
+  // ignore: library_private_types_in_public_api
   _GoogleButtonState createState() => _GoogleButtonState();
 }
 

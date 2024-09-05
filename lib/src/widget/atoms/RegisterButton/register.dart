@@ -60,7 +60,7 @@ class _RegisterButtonState extends State<RegisterButton> {
         fontweight: widget.fontWeight ?? FontWeight.w700,
         borderWidth: widget.borderWidth ?? 1,
         textAlign: TextAlign.center,
-        borderRadius: BorderRadius.all(Radius.circular(16)),
+        borderRadius: const BorderRadius.all(Radius.circular(16)),
       ),
     );
   }
